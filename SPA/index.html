@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="app">
+
+        <!-- LOGIN VIEW -->
+        <section id="loginView" class="view active">
+            <h1>Login</h1>
+
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+
+            <button id="loginBtn">Login</button>
+
+            <p id="message"></p>
+        </section>
+
+
+        <!-- HOME VIEW -->
+        <section id="homeView" class="view">
+            <h1>Home</h1>
+
+            <div id="productsContainer"></div>
+
+            <button id="contactBtn">Go to Contact</button>
+        </section>
+
+
+        <!-- CONTACT VIEW -->
+        <section id="contactView" class="view">
+            <h1>Contact Us</h1>
+
+            <input type="text" id="contactName" placeholder="Name">
+            <p id="nameError" class="field-error"></p>
+
+            <input type="email" id="contactEmail" placeholder="Email">
+            <p id="emailError" class="field-error"></p>
+
+            <textarea id="contactMessage" placeholder="Message"></textarea>
+            <p id="messageError" class="field-error"></p>
+
+            <button id="sendBtn">Send</button>
+
+            <p id="successMessage" class="success-msg"></p>
+
+            <button id="backBtn">Back Home</button>
+        </section>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
