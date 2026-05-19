@@ -72,7 +72,6 @@ project/
 │
 ├── index.html
 ├── style.css
-├── main.js
 ├── db.json
 ├── app.js
 ```
